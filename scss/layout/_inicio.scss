@@ -1,0 +1,42 @@
+
+/* Seccion inicio */
+.paralax{
+    position: relative;
+    /* 100% del ancho de la pantalla */
+    width: 100%;
+    /* Antes tenía 100% del viewport (alto de la vista de la ventana), 
+       con la corrección de Felipe le ponemos height: auto
+    */
+    height: auto;
+    /* Imagen de fondo*/
+    background-image: url("../src/assets/img/carrousel-1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    .wellcome{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 30rem 0;
+
+        h1{
+            font-family: $font-welcome;
+            font-size: $size-text-wellcome-h1;
+            color: #fff;
+        }
+
+        p{
+            font-family: $font-welcome;
+            font-size: $size-text-wellcome-p;
+            font-weight: 300;
+            color: #fff;
+            margin-top: 1%;
+            text-align: center;
+        }
+    }
+}
+/* Fin seccion inicio */
