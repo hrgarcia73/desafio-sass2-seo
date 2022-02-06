@@ -24,18 +24,28 @@
         padding: 30rem 0;
 
         h1{
-            font-family: $font-welcome;
-            font-size: $size-text-wellcome-h1;
-            color: #fff;
-        }
+            .titulo{
+            /*
+                Para SEO elimino el parrafo y coloco todo en el h1.
+                para poder dar estilos diferentes a los dos textos 
+                utilizo dos etiquetas span con diferentes clases,
+                titulo y descripcion 
+            */
+                display: block;
+                font-family: $font-welcome;
+                font-size: $size-text-wellcome-h1;
+                color: #fff;
+                text-align: center; 
+            }
+            .descripcion{
+                font-family: $font-welcome;
+                font-size: $size-text-wellcome-p;
+                font-weight: 300;
+                color: #fff;
+                margin-top: 1%;
+                text-align: center;                
+            }
 
-        p{
-            font-family: $font-welcome;
-            font-size: $size-text-wellcome-p;
-            font-weight: 300;
-            color: #fff;
-            margin-top: 1%;
-            text-align: center;
         }
     }
 }
